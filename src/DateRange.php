@@ -5,24 +5,24 @@ namespace Danoha;
 class DateRange
 {
 
-    /** @var \DateTime|NULL */
+    /** @var \DateTimeInterface|NULL */
     protected $from;
 
-    /** @var \DateTime|NULL */
+    /** @var \DateTimeInterface|NULL */
     protected $to;
 
     /**
-     * @param \DateTime|NULL $from
-     * @param \DateTime|NULL $to
+     * @param \DateTimeInterface|NULL $from
+     * @param \DateTimeInterface|NULL $to
      */
-    public function __construct(\DateTime $from = NULL, \DateTime $to = NULL)
+    public function __construct(\DateTimeInterface $from = NULL, \DateTimeInterface $to = NULL)
     {
         $this->from = $from;
         $this->to = $to;
     }
 
     /**
-     * @return \DateTime|NULL
+     * @return \DateTimeInterface|NULL
      */
     public function getFrom()
     {
@@ -30,7 +30,7 @@ class DateRange
     }
 
     /**
-     * @return \DateTime|NULL
+     * @return \DateTimeInterface|NULL
      */
     public function getTo()
     {
